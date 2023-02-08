@@ -1,7 +1,7 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 
-export const StyledImg = styled.img`
+const StyledImg = styled.img`
   box-sizing: border-box;
   ${(props) => {
     const { width, height, border, borderRadius, padding, objectfit, margin, boxShd } =
