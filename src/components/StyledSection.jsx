@@ -3,6 +3,9 @@ import styled, { css } from 'styled-components';
 
 const StyledSection = styled.section`
   box-sizing: border-box;
+  @media only screen and (max-width: 1554px) {
+    width: 15rem;
+  }
   ${(props) => {
     const {
       backgr,

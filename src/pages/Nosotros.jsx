@@ -13,39 +13,40 @@ export const Nosotros = () => {
       justify="center"
       gap="1.5rem"
       align="center"
-      height="calc(100vh - 3rem)"
+      minH="calc(100vh - 3rem)"
+      padding="2rem"
     >
-      <Section display="flex" flexdir="column" align="center" width="20rem">
-        <Img src={diamond} alt="Imagen X" width="10rem" />
+      <Section display="flex" flexdir="column" align="center" width="22rem" gap="1rem">
+        <Img src={diamond} alt="Imagen X" width="100%" />
         <H3>Pepito Pérez García</H3>
-        <P>
+        <P textAl="center">
           Departamento de Derecho Penal. Abogado penalista especializado en delitos contra
           la Hacienda Pública, licenciado en la UCM y ejerciente desde 1989. Experiencia
           citas o mierders varias.
         </P>
       </Section>
-      <Section display="flex" flexdir="column" align="center" width="20rem">
-        <Img src={diamond} alt="Imagen X" width="10rem" />
+      <Section display="flex" flexdir="column" align="center" width="22rem" gap="1rem">
+        <Img src={diamond} alt="Imagen X" width="100%" />
         <H3>Pepito Pérez García</H3>
-        <P>
+        <P textAl="center">
           Departamento de Derecho Penal. Abogado penalista especializado en delitos contra
           la Hacienda Pública, licenciado en la UCM y ejerciente desde 1989. Experiencia
           citas o mierders varias.
         </P>
       </Section>
-      <Section display="flex" flexdir="column" align="center" width="20rem">
-        <Img src={diamond} alt="Imagen X" width="10rem" />
+      <Section display="flex" flexdir="column" align="center" width="22rem" gap="1rem">
+        <Img src={diamond} alt="Imagen X" width="100%" />
         <H3>Pepito Pérez García</H3>
-        <P>
+        <P textAl="center">
           Departamento de Derecho Penal. Abogado penalista especializado en delitos contra
           la Hacienda Pública, licenciado en la UCM y ejerciente desde 1989. Experiencia
           citas o mierders varias.
         </P>
       </Section>
-      <Section display="flex" flexdir="column" align="center" width="20rem">
-        <Img src={diamond} alt="Imagen X" width="10rem" />
+      <Section display="flex" flexdir="column" align="center" width="22rem" gap="1rem">
+        <Img src={diamond} alt="Imagen X" width="100%" />
         <H3>Pepito Pérez García</H3>
-        <P>
+        <P textAl="center">
           Departamento de Derecho Penal. Abogado penalista especializado en delitos contra
           la Hacienda Pública, licenciado en la UCM y ejerciente desde 1989. Experiencia
           citas o mierders varias.

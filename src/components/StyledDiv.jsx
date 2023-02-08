@@ -13,6 +13,7 @@ export const StyledDiv = styled.div`
       flexdir,
       objectfit,
       width,
+      minH,
       height,
       justify,
       border,
@@ -32,6 +33,7 @@ export const StyledDiv = styled.div`
       flex-direction: ${flexdir};
       object-fit: ${objectfit};
       width: ${width};
+      min-height: ${minH};
       height: ${height};
       justify-content: ${justify};
       border-radius: ${borderradius};

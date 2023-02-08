@@ -4,10 +4,20 @@ import styled, { css } from 'styled-components';
 const StyledImg = styled.img`
   box-sizing: border-box;
   ${(props) => {
-    const { width, height, border, borderRadius, padding, objectfit, margin, boxShd } =
-      props;
+    const {
+      width,
+      maxW,
+      height,
+      border,
+      borderRadius,
+      padding,
+      objectfit,
+      margin,
+      boxShd,
+    } = props;
     return css`
       width: ${width};
+      max-width: ${maxW};
       height: ${height};
       border: ${border};
       border-radius: ${borderRadius};
