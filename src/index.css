@@ -15,3 +15,7 @@
   text-decoration: underline;
   text-underline-offset: 0.25rem;
 }
+
+.navlink.active {
+  background-color: aliceblue;
+}
