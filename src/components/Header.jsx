@@ -1,35 +1,21 @@
-import { NavLink } from 'react-router-dom';
+import { useState } from 'react';
 
-import { StyledDiv } from './StyledDiv';
+import { HeaderWrapper } from './HeaderWrapper';
+import MenuButton from './MenuButton';
+import NavBar from './NavBar';
 
 export const Header = () => {
+  const [open, setOpen] = useState(false);
+
+  const handleClick = () => {
+    setOpen(!open);
+  };
+
   return (
-    <StyledDiv
-      width="100%"
-      backgr="silver"
-      display="flex"
-      flexdir="row"
-      padding="1rem"
-      justify="space-around"
-    >
+    <HeaderWrapper>
       <img src="" alt="logo" />
-      <StyledDiv display="flex" gap="1.5rem" flexwrap="wrap">
-        <NavLink to="" className="navlink">
-          PRINCIPAL
-        </NavLink>
-        <NavLink to="despacho" className="navlink">
-          EL DESPACHO
-        </NavLink>
-        <NavLink to="nosotros" className="navlink">
-          NOSOTROS
-        </NavLink>
-        <NavLink to="blog" className="navlink">
-          BLOG
-        </NavLink>
-        <NavLink to="contacto" className="navlink">
-          CONTACTO
-        </NavLink>
-      </StyledDiv>
-    </StyledDiv>
+      <NavBar open={open} />
+      <MenuButton open={open} handleClick={handleClick} />
+    </HeaderWrapper>
   );
 };
