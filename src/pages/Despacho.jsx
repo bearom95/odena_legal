@@ -4,10 +4,33 @@ import { Div } from '../components/StyledDiv';
 
 export const Despacho = () => {
   return (
-    <Div display="flex" flexdir="column" justify="center" padding="2rem 5rem">
-      <Div display="flex" margin="1rem 0" gap="1rem" flexdir="column">
-        <Img src={despacho} alt="despacho" width="50%" />
-        <Div>
+    <Div
+      minH="calc(100vh - 3rem)"
+      display="flex"
+      justify="center"
+      gap="3rem"
+      flexwrap="wrap"
+      align="center"
+      flexdir="column"
+      padding="2rem"
+      paddingResponsive="5rem"
+    >
+      <Div
+        display="flex"
+        margin="2rem 0"
+        gap="2.5rem"
+        flexwrap="wrap"
+        flexdir="row"
+        justify="center"
+      >
+        <Img
+          src={despacho}
+          alt="despacho"
+          width="20rem"
+          widthResponsive="35rem"
+          widthResponsiveDesktop="45rem"
+        />
+        <Div widthResponsive="35rem" display="flex" align="center">
           <p>
             En Ódena podremos darte la ayuda personalizada en distintos ámbitos del
             derecho, con el fin de darte el mejor resultado.
@@ -20,10 +43,16 @@ export const Despacho = () => {
             desconocimiento.
           </p>
         </Div>
-        <Div display="flex" margin="1rem 0" gap="1rem">
-          <p>Valores</p>
-          <Img src={despacho} alt="despacho" width="30rem" />
-        </Div>
+      </Div>
+      <Div display="flex" gap="1rem" flexwrap="wrap">
+        <p>Valores</p>
+        <Img
+          src={despacho}
+          alt="despacho"
+          width="20rem"
+          widthResponsive="35rem"
+          widthResponsiveDesktop="45rem"
+        />
       </Div>
     </Div>
   );
