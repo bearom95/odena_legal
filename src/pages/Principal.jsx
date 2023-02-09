@@ -2,20 +2,35 @@ import { NavLink } from 'react-router-dom';
 
 import despacho from '../../public/despachoAbogados.jpg';
 import { Img } from '../components/Img';
-import { StyledDiv } from '../components/StyledDiv';
+import { Div } from '../components/StyledDiv';
 
 export const Principal = () => {
   return (
-    <StyledDiv display="flex" flexdir="column" justify="center" padding="2rem 5%">
-      <h1
-        style={{ 'text-align': 'center', 'font-style': 'italic', 'font-weight': '600' }}
-      >
+    <Div
+      minH="calc(100vh - 3rem)"
+      display="flex"
+      justify="center"
+      gap="5rem"
+      flexwrap="wrap"
+      align="center"
+      flexdir="column"
+      padding="2rem"
+      paddingResponsive="5rem"
+    >
+      <h1 style={{ textAlign: 'center', fontStyle: 'italic', fontWeight: '600' }}>
         Huye de los abogados deshumanizados, nosotros te daremos una atención cercana,
         personalizada y sujeta a tus necesidades.
       </h1>
-      <StyledDiv display="flex" margin="2rem 0" gap="1rem">
-        <Img src={despacho} alt="despacho" width="30rem" height="20rem" />
-        <StyledDiv>
+      <Div
+        display="flex"
+        margin="2rem 0"
+        gap="1rem"
+        flexwrap="wrap"
+        flexdir="row"
+        justify="center"
+      >
+        <Img src={despacho} alt="despacho" width="20rem" widthResponsive="35rem" />
+        <Div widthResponsive="35rem">
           <p>
             Ódena es un despacho de abogados situado en Madrid y Toledo, donde podremos
             ayudarte con aquellas cuestiones jurídicas o procedimientos a los que te
@@ -32,8 +47,8 @@ export const Principal = () => {
               CONTACTO
             </NavLink>
           </h3>
-        </StyledDiv>
-      </StyledDiv>
-    </StyledDiv>
+        </Div>
+      </Div>
+    </Div>
   );
 };

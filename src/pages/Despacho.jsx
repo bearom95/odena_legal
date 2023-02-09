@@ -1,13 +1,13 @@
 import despacho from '../../public/despachoAbogados.jpg';
 import { Img } from '../components/Img';
-import { StyledDiv } from '../components/StyledDiv';
+import { Div } from '../components/StyledDiv';
 
 export const Despacho = () => {
   return (
-    <StyledDiv display="flex" flexdir="column" justify="center" padding="2rem 5rem">
-      <StyledDiv display="flex" margin="1rem 0" gap="1rem" flexdir="column">
+    <Div display="flex" flexdir="column" justify="center" padding="2rem 5rem">
+      <Div display="flex" margin="1rem 0" gap="1rem" flexdir="column">
         <Img src={despacho} alt="despacho" width="50%" />
-        <StyledDiv>
+        <Div>
           <p>
             En Ódena podremos darte la ayuda personalizada en distintos ámbitos del
             derecho, con el fin de darte el mejor resultado.
@@ -19,12 +19,12 @@ export const Despacho = () => {
             <br /> También te asesoraremos sobre cualquier tema que te genere dudas o
             desconocimiento.
           </p>
-        </StyledDiv>
-        <StyledDiv display="flex" margin="1rem 0" gap="1rem">
+        </Div>
+        <Div display="flex" margin="1rem 0" gap="1rem">
           <p>Valores</p>
           <Img src={despacho} alt="despacho" width="30rem" />
-        </StyledDiv>
-      </StyledDiv>
-    </StyledDiv>
+        </Div>
+      </Div>
+    </Div>
   );
 };

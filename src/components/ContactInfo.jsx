@@ -1,11 +1,10 @@
-import { Div } from './StyledDiv';
-import mapa from '../../public/mapaEjemplo.png';
-import { Img } from './Img';
 import location from '../../public/location-filled-svgrepo-com.svg';
-import P from './StyledP';
-import phone from '../../public/phone-free-material-svgrepo-com.svg';
 import mail from '../../public/mail-5-svgrepo-com.svg';
-import { ContactImg } from './StyledImgContact';
+import mapa from '../../public/mapaEjemplo.png';
+import phone from '../../public/phone-free-material-svgrepo-com.svg';
+import { Img } from './Img';
+import { Div } from './StyledDiv';
+import P from './StyledP';
 
 const ContactInfo = () => {
   return (
@@ -22,7 +21,13 @@ const ContactInfo = () => {
         <Img src={location} alt="icono de localización" width="2.5rem" />
         <P>Direccion de OdenaLegal</P>
       </Div>
-      <ContactImg src={mapa} alt="imagen de la localización" width="22rem" />
+      <Img
+        src={mapa}
+        alt="imagen de la localización"
+        width="22rem"
+        widthResponsive="25rem"
+        widthResponsiveDesktop="32rem"
+      />
     </Div>
   );
 };

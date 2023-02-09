@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-export const StyledDiv = styled.div`
+const StyledDiv = styled.div`
   box-sizing: border-box;
 
   ${(props) => {
@@ -23,6 +23,8 @@ export const StyledDiv = styled.div`
       align,
       borderbottom,
       gap,
+      widthResponsive,
+      paddingResponsive,
     } = props;
     return css`
       background-color: ${backgr};
@@ -43,6 +45,10 @@ export const StyledDiv = styled.div`
       align-items: ${align};
       border-bottom: ${borderbottom};
       gap: ${gap};
+      @media only screen and (min-width: 624px) {
+        width: ${widthResponsive};
+        padding: ${paddingResponsive};
+      }
     `;
   }}
 `;
