@@ -15,7 +15,7 @@ export const ContactForm = () => {
   return (
     <form ref={form} onSubmit={sendEmail}>
       <Fieldset>
-        <Legend>Contáctanos</Legend>
+        <Legend>Contáctanos, te esperamos</Legend>
         <DivForm display="flex" flexdir="row" gap="2rem" justify="center" align="center">
           <Img src={mailIcon} alt="mail icon" width="2.5rem" />
           <P>correo odenaLegal</P>
@@ -30,7 +30,7 @@ export const ContactForm = () => {
           <Input
             type="text"
             name="user_name"
-            placeholder="Name"
+            placeholder="Nombre"
             textAl="center"
             borderRad="9px"
             fontSz="1rem"
@@ -47,9 +47,19 @@ export const ContactForm = () => {
             heigth="2rem"
             required
           />
+          <Input
+            type="text"
+            name="tema"
+            placeholder="Tema"
+            textAl="center"
+            borderRad="9px"
+            fontSz="1rem"
+            heigth="2rem"
+            required
+          />
           <Textarea
             name="message"
-            placeholder="Message"
+            placeholder="Mensaje"
             fontSz="1rem"
             borderRad="9px"
             textAl="center"

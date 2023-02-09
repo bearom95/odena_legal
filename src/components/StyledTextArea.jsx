@@ -3,10 +3,10 @@ import styled, { css } from 'styled-components';
 const StyledTextarea = styled.textarea`
   height: 15rem;
   padding: 1rem;
+  width: 85%;
   ${(props) => {
-    const { width, color, fontSz, textAl, backgr, border, borderRad } = props;
+    const { color, fontSz, textAl, backgr, border, borderRad } = props;
     return css`
-      width: ${width};
       color: ${color};
       font-size: ${fontSz};
       text-align: ${textAl};

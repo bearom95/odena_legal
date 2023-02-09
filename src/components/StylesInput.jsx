@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components';
 
 const StyledInput = styled.input`
+  width: 70%;
   ${(props) => {
     const {
       width,
