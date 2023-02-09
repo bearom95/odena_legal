@@ -14,6 +14,8 @@ const StyledImg = styled.img`
       objectfit,
       margin,
       boxShd,
+      widthResponsive,
+      widthResponsiveDesktop,
     } = props;
     return css`
       width: ${width};
@@ -25,6 +27,12 @@ const StyledImg = styled.img`
       object-fit: ${objectfit};
       margin: ${margin};
       box-shadow: ${boxShd};
+      @media only screen and (min-width: 624px) {
+        width: ${widthResponsive};
+      }
+      @media only screen and (min-width: 1150px) {
+        width: ${widthResponsiveDesktop};
+      }
     `;
   }}
 `;

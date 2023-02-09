@@ -6,7 +6,7 @@ export const App = () => {
   return (
     <div className="App">
       <Header />
-      <main style={{ height: 'calc(100vh - 3rem)' }}>
+      <main>
         <Outlet />
       </main>
     </div>
