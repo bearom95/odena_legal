@@ -1,3 +1,10 @@
+import { ContactForm } from '../components/ContactForm';
+import { Div } from '../components/StyledDiv';
+
 export const Contacto = () => {
-  return <h1>Contacto</h1>;
+  return (
+    <Div display="flex" justify="center">
+      <ContactForm />
+    </Div>
+  );
 };
