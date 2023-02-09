@@ -24,13 +24,19 @@ export const Principal = () => {
       <Div
         display="flex"
         margin="2rem 0"
-        gap="1rem"
+        gap="2.5rem"
         flexwrap="wrap"
         flexdir="row"
         justify="center"
       >
-        <Img src={despacho} alt="despacho" width="20rem" widthResponsive="35rem" />
-        <Div widthResponsive="35rem">
+        <Img
+          src={despacho}
+          alt="despacho"
+          width="20rem"
+          widthResponsive="30rem"
+          widthResponsiveDesktop="45rem"
+        />
+        <Div widthResponsive="30rem">
           <p>
             Ódena es un despacho de abogados situado en Madrid y Toledo, donde podremos
             ayudarte con aquellas cuestiones jurídicas o procedimientos a los que te
