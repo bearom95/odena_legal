@@ -30,7 +30,7 @@ const StyledImg = styled.img`
       @media only screen and (min-width: 624px) {
         width: ${widthResponsive};
       }
-      @media only screen and (min-width: 1350px) {
+      @media only screen and (min-width: 1370px) {
         width: ${widthResponsiveDesktop};
       }
     `;
