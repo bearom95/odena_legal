@@ -1,7 +1,6 @@
 import styled, { css } from 'styled-components';
 
-const StyledInput = styled.input`
-  width: 70%;
+const StyledButton = styled.button`
   ${(props) => {
     const {
       width,
@@ -15,6 +14,7 @@ const StyledInput = styled.input`
       margin,
       padding,
       cursor,
+      all,
     } = props;
     return css`
       width: ${width};
@@ -28,12 +28,13 @@ const StyledInput = styled.input`
       margin: ${margin};
       padding: ${padding};
       cursor: ${cursor};
+      all: ${all};
     `;
   }}
 `;
 
-const Input = (props) => {
-  return <StyledInput {...props}></StyledInput>;
+const Button = (props) => {
+  return <StyledButton {...props}></StyledButton>;
 };
 
-export default Input;
+export default Button;

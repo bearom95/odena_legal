@@ -1,11 +1,11 @@
 import styled, { css } from 'styled-components';
 
 const StyledTextarea = styled.textarea`
-  height: 15rem;
+  height: 8rem;
   padding: 1rem;
   width: 85%;
   ${(props) => {
-    const { color, fontSz, textAl, backgr, border, borderRad } = props;
+    const { color, fontSz, textAl, backgr, border, borderRad, margin } = props;
     return css`
       color: ${color};
       font-size: ${fontSz};
@@ -13,6 +13,7 @@ const StyledTextarea = styled.textarea`
       background: ${backgr};
       border: ${border};
       border-radius: ${borderRad};
+      margin: ${margin};
     `;
   }}
 `;
