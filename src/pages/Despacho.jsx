@@ -27,10 +27,10 @@ export const Despacho = () => {
           src={despacho}
           alt="despacho"
           width="20rem"
-          widthResponsive="35rem"
+          widthResponsive="30rem"
           widthResponsiveDesktop="45rem"
         />
-        <Div widthResponsive="35rem" display="flex" align="center">
+        <Div widthResponsive="30rem" display="flex" align="center">
           <p>
             En Ódena podremos darte la ayuda personalizada en distintos ámbitos del
             derecho, con el fin de darte el mejor resultado.
