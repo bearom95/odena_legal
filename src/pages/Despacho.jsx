@@ -45,7 +45,11 @@ export const Despacho = () => {
         </Div>
       </Div>
       <Div display="flex" gap="1rem" flexwrap="wrap">
-        <p>Valores</p>
+        <Div>
+          <h2>Nuestros Valores</h2>
+          <p></p>
+        </Div>
+
         <Img
           src={despacho}
           alt="despacho"

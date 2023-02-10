@@ -14,7 +14,7 @@ export const Header = () => {
   return (
     <HeaderWrapper>
       <img src="" alt="logo" />
-      <NavBar open={open} />
+      <NavBar open={open} handleClick={handleClick} />
       <MenuButton open={open} handleClick={handleClick} />
     </HeaderWrapper>
   );
