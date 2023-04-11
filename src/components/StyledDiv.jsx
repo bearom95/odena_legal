@@ -13,6 +13,7 @@ const StyledDiv = styled.div`
       flexdir,
       objectfit,
       width,
+      maxW,
       minH,
       height,
       justify,
@@ -35,6 +36,7 @@ const StyledDiv = styled.div`
       flex-direction: ${flexdir};
       object-fit: ${objectfit};
       width: ${width};
+      max-width: ${maxW};
       min-height: ${minH};
       height: ${height};
       justify-content: ${justify};
