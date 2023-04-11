@@ -1,8 +1,8 @@
+import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
+import { toast /*ToastContainer*/ } from 'react-toastify';
 
-/* import mailIcon from '../../public/mail-5-svgrepo-com.svg'; */
 import Button from './Button';
-/* import { Img } from './Img'; */
 import { Modal } from './ModalTerms';
 import { Div } from './StyledDiv';
 import Fieldset from './StyledFieldset';
@@ -16,19 +16,44 @@ export const ContactForm = () => {
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
-    form.current.reset();
-    console.log('enviando email');
+    emailjs
+      .sendForm('service_4fobios', 'contact_form', form.current, 'OSbft1z1M9_pHU-mC')
+      .then();
+    (res) => {
+      console.log(res);
+      toast.success('The mail has been sent!', {
+        position: 'top-right',
+        autoClose: 5000,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: 'colored',
+      });
+    },
+      (error) => {
+        console.log('FAILED', error);
+        toast.error('The mail has not been sent!', {
+          position: 'top-right',
+          autoClose: 5000,
+          hideProgressBar: true,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: 'colored',
+        });
+      },
+      form.current.reset();
   };
+
   return (
     <form ref={form} onSubmit={sendEmail}>
       <Fieldset>
         <Legend textAl="center" fontSz="2rem">
           Contáctanos, te esperamos
         </Legend>
-        {/* <DivForm display="flex" flexdir="row" gap="2rem" justify="center" align="center">
-          <Img src={mailIcon} alt="mail icon" width="2.5rem" />
-          <P>correo odenaLegal</P>
-        </DivForm> */}
         <DivForm padding="1rem" display="flex" flexdir="column" justify="center">
           <Legend fontSz="1rem">Nombre</Legend>
           <Input

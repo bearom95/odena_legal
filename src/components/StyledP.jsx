@@ -3,7 +3,18 @@ import styled, { css } from 'styled-components';
 
 const StyledP = styled.p`
   ${(props) => {
-    const { color, fontSz, textAl, borderBt, width, maxW, pad, cursor } = props;
+    const {
+      color,
+      fontSz,
+      textAl,
+      borderBt,
+      width,
+      maxW,
+      pad,
+      cursor,
+      widthResponsive,
+      paddingResponsive,
+    } = props;
     return css`
       color: ${color};
       font-size: ${fontSz};
@@ -13,6 +24,10 @@ const StyledP = styled.p`
       max-width: ${maxW};
       padding: ${pad};
       cursor: ${cursor};
+      @media only screen and (min-width: 624px) {
+        width: ${widthResponsive};
+        padding: ${paddingResponsive};
+      }
     `;
   }}
 `;

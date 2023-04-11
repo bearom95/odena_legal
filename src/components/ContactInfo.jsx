@@ -7,7 +7,7 @@ import P from './StyledP';
 const ContactInfo = () => {
   return (
     <Div display="flex" flexdir="column" gap="2rem" justify="center">
-      <Div maxW="33rem">
+      <Div width="33rem" widthResponsiveMax="40rem">
         <P pad="0.3rem">Escríbenos explicando tu problema o consulta.</P>
         <P pad="0.3rem">
           Una vez recibida la consulta, te contestaremos en el menor tiempo posible.

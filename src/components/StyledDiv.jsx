@@ -26,6 +26,8 @@ const StyledDiv = styled.div`
       gap,
       widthResponsive,
       paddingResponsive,
+      widthResponsiveMax,
+      paddingResponsiveMax,
     } = props;
     return css`
       background-color: ${backgr};
@@ -50,6 +52,10 @@ const StyledDiv = styled.div`
       @media only screen and (min-width: 624px) {
         width: ${widthResponsive};
         padding: ${paddingResponsive};
+      }
+      @media only screen and (min-width: 1375px) {
+        width: ${widthResponsiveMax};
+        padding: ${paddingResponsiveMax};
       }
     `;
   }}
