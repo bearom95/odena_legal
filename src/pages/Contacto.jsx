@@ -7,7 +7,7 @@ export const Contacto = () => {
     <Div
       minH="calc(100vh - 3rem)"
       display="flex"
-      justify="center"
+      justify="space-around"
       padding="2rem"
       gap="5rem"
       flexwrap="wrap"
